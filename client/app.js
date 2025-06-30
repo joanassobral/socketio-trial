@@ -1,4 +1,4 @@
-const socket = io("ws://https://socketio-trial.onrender.com:3500")
+const socket = io("ws://0.0.0.0:3500")
 const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
 let paragraph_container;
