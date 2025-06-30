@@ -5,7 +5,7 @@ const httpServer = createServer()
 
 const io = new Server(httpServer, {
     cors: {
-        origin: process.env.NODE_ENV === "production" ? false : ["http://localhost:5500", "http://127.0.0.1:5500", "http://172.17.24.112:5500", "http://192.168.178.242:5500", "http://172.20.10.2:5500", "https://socketio-trial.onrender.com"]
+        origin: process.env.NODE_ENV === "production" ? false : ["http://localhost:5500", "http://127.0.0.1:5500", "http://172.17.24.112:5500", "http://192.168.178.242:5500", "http://172.20.10.2:5500", "https://socketio-trial.onrender.com", "0.0.0.0:5500"]
     }
 })
 
